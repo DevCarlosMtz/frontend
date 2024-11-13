@@ -1,0 +1,8 @@
+# Matar los procesos
+docker compose kill
+
+# Eliminar el cache e imagenes no utilizadas
+docker system prune -a
+
+# Production
+docker compose -f docker-compose.prod.yml up -d --build

@@ -1,0 +1,4 @@
+{
+  "nuxt.isNuxtApp": true,
+  "svn.ignoreMissingSvnWarning": true
+}

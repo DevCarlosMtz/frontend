@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  project-nuxt:
+    container_name: project-nuxt
+    build:
+      context: ./
+      dockerfile: DockerFile
+    restart: unless-stopped
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 80:3000
+
+networks:
+  network-project-nuxt:
+    driver: bridge
